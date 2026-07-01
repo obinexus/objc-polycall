@@ -1,0 +1,11 @@
+{
+  "name": "objc-polycall",
+  "version": "1.5.0",
+  "language": "Objective-C",
+  "adapter": true,
+  "ffi": true,
+  "config": "objc-polycallrc",
+  "core": "../../src",
+  "license": "MIT OBINexus",
+  "author": "Nnamdi Michael Okpala"
+}
