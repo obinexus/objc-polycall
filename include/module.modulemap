@@ -1,0 +1,4 @@
+module ObjCPolycall {
+  header "OBNPolycall.h"
+  export *
+}

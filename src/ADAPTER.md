@@ -1,8 +1,7 @@
-# Objective-C adapter (scaffold)
+# Objective-C adapter
 
-Implement the Objective-C adapter here. It must call across the FFI boundary only:
+`OBNPolycall.m` provides the Foundation API. `objc_polycall.c` forwards the
+UTF-8 path to `polycall_ffi_run_config(config_path, 1)` and returns the status
+unchanged.
 
-    status = polycall_ffi_run_config("objc-polycallrc", /*run=*/1)
-
-Return/raise a Objective-C-native error when `status` is non-zero. Do not parse
-config or duplicate any core logic. See ../../../docs/adapter-pattern.md.
+No configuration parsing or runtime policy belongs in this binding.

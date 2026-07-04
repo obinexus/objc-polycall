@@ -1,11 +1,13 @@
 {
   "name": "objc-polycall",
+  "package": "@obinexusltd/objc-polycall",
   "version": "1.5.0",
   "language": "Objective-C",
   "adapter": true,
   "ffi": true,
+  "entry_point": "polycall_ffi_run_config",
   "config": "objc-polycallrc",
   "core": "../../src",
-  "license": "MIT OBINexus",
+  "license": "MIT",
   "author": "Nnamdi Michael Okpala"
 }

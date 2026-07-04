@@ -1,4 +1,5 @@
-# Objective-C tests (scaffold)
+# Objective-C tests
 
-Add a smoke test that loads `../objc-polycallrc`, calls the adapter, and asserts a
-zero status. Mirror the reference bindings (pypolycall / rust-polycall).
+`npm test` runs the portable native forwarding test, source audit, and npm
+relative-directory index test. `npm run test:objc` additionally compiles and
+runs the Foundation API against the mock core.
