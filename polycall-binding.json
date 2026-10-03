@@ -1,13 +1,16 @@
 {
   "name": "objc-polycall",
   "package": "@obinexusltd/objc-polycall",
-  "version": "1.5.0",
+  "version": "1.0.0",
   "language": "Objective-C",
   "adapter": true,
   "ffi": true,
   "entry_point": "polycall_ffi_run_config",
   "config": "objc-polycallrc",
-  "core": "../../src",
+  "native_manifest": "package.json",
+  "core": "polycall >= 1.1.0 (binding ABI 1)",
+  "core_repository": "https://github.com/obinexus/polycall",
+  "repository": "https://github.com/obinexus/objc-polycall",
   "license": "MIT",
   "author": "Nnamdi Michael Okpala"
 }

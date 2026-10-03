@@ -1,8 +1,11 @@
-# objc-polycallrc - read-only Objective-C runtime overrides for libpolycall
+# objc-polycallrc - read-only Objective-C runtime overrides for Polycall
 #
-# This file uses the SHARED polycall schema (src/config/polycall_config_schema.c).
-# It introduces no new keys or parser: the Objective-C adapter passes this path to
-# the core via the FFI boundary. Values here override polycallrc for Objective-C.
+# This file uses the SHARED Polycall configuration grammar: the core validates
+# it exactly as `polycall config validate` does, through
+# polycall_ffi_run_config(path, run) (+[OBNPolycall runConfigAtPath:error:]).
+# It introduces no new keys or parser: the Objective-C adapter only passes
+# this path to the core across the FFI boundary. Values here override
+# polycallrc for Objective-C.
 
 log_level=info
 max_connections=1000

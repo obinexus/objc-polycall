@@ -1,0 +1,15 @@
+# QA descriptor for the Polycall binding matrix (read by polycall/qa/run_qa.py).
+# This repository is NOT a Python package and is not pip-installable;
+# its native manifest is package.json (with the Makefile for the native build).
+[tool.polycall.binding]
+name = "objc-polycall"
+language = "Objective-C"
+native_manifest = "package.json"
+registry = "npm"
+package = "@obinexusltd/objc-polycall"
+abi = 1
+support = "supported"
+linux_image = "debian:12 (+ apt: gobjc gnustep-devel make pkg-config valgrind nodejs npm)"
+build = "make && make objc"
+test = "sh tests/run-real-core.sh"
+windows_test = ""
