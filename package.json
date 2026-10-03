@@ -1,7 +1,7 @@
 {
   "name": "@obinexusltd/objc-polycall",
   "version": "1.0.0",
-  "description": "Objective-C Foundation source binding for libpolycall 1.5",
+  "description": "Objective-C / Foundation source binding for the Polycall C library (binding ABI v1)",
   "main": "index.js",
   "type": "commonjs",
   "exports": {
@@ -9,7 +9,6 @@
     "./package.json": "./package.json",
     "./src/*": "./src/*",
     "./include/*": "./include/*",
-    "./generated/*": "./generated/*",
     "./examples/*": "./examples/*",
     "./tests/*": "./tests/*",
     "./scripts/*": "./scripts/*"
@@ -18,7 +17,6 @@
     "index.js",
     "src/",
     "include/",
-    "generated/",
     "examples/",
     "tests/",
     "scripts/",
@@ -33,7 +31,6 @@
     "lib": "src",
     "src": "src",
     "include": "include",
-    "generated": "generated",
     "example": "examples",
     "test": "tests",
     "scripts": "scripts"
@@ -43,6 +40,8 @@
     "build:objc": "make objc",
     "test": "make test && npm run verify:dry && npm run test:package",
     "test:objc": "make test-objc",
+    "test:real": "make test-real",
+    "test:memory": "make build/objc_polycall_test && sh tests/valgrind.sh",
     "test:package": "node tests/package.test.js",
     "verify:dry": "make verify-dry",
     "verify": "npm test",
