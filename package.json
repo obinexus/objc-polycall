@@ -1,5 +1,5 @@
 {
-  "name": "@obinexusltd/objc-polycall",
+  "name": "objc-polycall",
   "version": "1.0.0",
   "description": "Objective-C / Foundation source binding for the Polycall C library (binding ABI v1)",
   "main": "index.js",

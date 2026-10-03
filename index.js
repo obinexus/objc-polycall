@@ -57,7 +57,7 @@ function resolve(directoryName, ...segments) {
 }
 
 module.exports = Object.freeze({
-  packageName: '@obinexusltd/objc-polycall',
+  packageName: 'objc-polycall',
   projectRoot: __dirname,
   directories,
   resolve,

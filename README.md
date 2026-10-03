@@ -1,4 +1,4 @@
-# @obinexusltd/objc-polycall
+# objc-polycall
 
 Objective-C / Foundation binding for [Polycall](https://github.com/obinexus/polycall):
 the binding ABI v1 of the Polycall C library (`polycall.h`, `libpolycall`),
@@ -111,14 +111,14 @@ released exactly once (`close:`, or `dealloc` when it was never closed).
 ## Install the source package
 
 ```shell
-npm install @obinexusltd/objc-polycall
+npm install objc-polycall
 ```
 
 The npm package ships the project sources (`src`, `include`, `examples`,
 `tests`, `scripts`, `Makefile`). Its CommonJS entry point only indexes them:
 
 ```javascript
-const objcPolycall = require('@obinexusltd/objc-polycall');
+const objcPolycall = require('objc-polycall');
 console.log(objcPolycall.directories.src.relativeFiles);
 console.log(objcPolycall.resolve('examples', 'main.m'));
 ```

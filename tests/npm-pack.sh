@@ -20,8 +20,8 @@ npm init -y >/dev/null || exit 1
 npm install --no-audit --no-fund "$T/$TGZ" || exit 1
 node -e '
 const assert = require("node:assert/strict");
-const pkg = require("@obinexusltd/objc-polycall");
-const meta = require("@obinexusltd/objc-polycall/package.json");
+const pkg = require("objc-polycall");
+const meta = require("objc-polycall/package.json");
 assert.equal(pkg.packageName, meta.name);
 assert.ok(pkg.directories.src.relativeFiles.includes("OBNPolycall.m"));
 assert.ok(pkg.directories.include.relativeFiles.includes("OBNPolycall.h"));
@@ -29,6 +29,6 @@ assert.equal(pkg.directories.generated, undefined, "the stub generated/ director
 assert.ok(require("node:fs").existsSync(pkg.makefile));
 console.log("installed entry point OK:", meta.name, meta.version);
 ' || exit 1
-cd "$T/app/node_modules/@obinexusltd/objc-polycall" || exit 1
+cd "$T/app/node_modules/objc-polycall" || exit 1
 echo "== make test-real in the installed package"
 make test-real

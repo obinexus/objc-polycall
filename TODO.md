@@ -3,7 +3,7 @@
 Status: Objective-C/Foundation adapter over the real Polycall binding ABI v1
 (`polycall >= 1.1.0`), tested on Linux with GNUstep.
 
-- [x] Publishable `@obinexusltd/objc-polycall` npm source package
+- [x] Publishable `objc-polycall` npm source package
 - [x] Relative npm indexes for every project source directory
 - [x] Real `<polycall.h>` via pkg-config (stub `generated/polycall_ffi.h` removed)
 - [x] Foundation API: ABI check, run_config (strict/lenient), describe, call,

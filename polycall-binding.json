@@ -1,6 +1,6 @@
 {
   "name": "objc-polycall",
-  "package": "@obinexusltd/objc-polycall",
+  "package": "objc-polycall",
   "version": "1.0.0",
   "language": "Objective-C",
   "adapter": true,
