@@ -18,7 +18,6 @@ assert.equal(author, 'Nnamdi Michael Okpala <okpalan@protonmail.com>');
 const metadataKeys = {
   src: 'src',
   include: 'include',
-  generated: 'generated',
   examples: 'example',
   tests: 'test',
   scripts: 'scripts'

@@ -6,7 +6,6 @@ const path = require('node:path');
 const relativeDirectories = Object.freeze({
   src: 'src',
   include: 'include',
-  generated: 'generated',
   examples: 'examples',
   tests: 'tests',
   scripts: 'scripts'
